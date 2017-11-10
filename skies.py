@@ -12,7 +12,7 @@ def root():
                            title = dnasa.get('title'),
                            cred = dnasa.get('copyright'),
                            text = dnasa.get('explanation'),
-                           pic = dnasa.get('url'));
+                           pic = dnasa.get('hdurl'));
 
 if __name__ == "__main__":
     skies.debug = True;
