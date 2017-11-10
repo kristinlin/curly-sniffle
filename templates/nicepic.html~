@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>NASA PIX</title>
+    <link rel="stylesheet" type="text/css" href="static/prettypic.css">
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+	<div class="large-12 cell">
+
+	  <h1>Today's View of Space</h1>
+	  <br>
+	  
+	  <img src='{{ pic }}' alt='{{ title }}'>
+	  <br>
+	  
+	  <div class="content">
+	    <h4>{{ title }}</h4>
+	    by: {{ cred }}
+	    <p>{{ text }}</p>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+    
+  </body>
+</html>

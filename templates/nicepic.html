@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>NASA PIX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0=" crossorigin="anonymous" />
+  </head>
+  <body>
+
+    <br><br>
+    
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+	<div class="large-12 cell">
+
+	  <h1>Today's View of Space</h1>
+	  <hr>
+
+	  <div class="secondary callout">
+	    <h4>{{ title }}</h4>
+	    by: {{ cred }}
+	    <p>{{ text }}</p>
+	  </div>
+	  <br>
+	  
+	  <img src='{{ pic }}' class="float-center">
+
+	</div>
+      </div>
+    </div>
+
+    <br><br><br>
+    
+  </body>
+</html>
