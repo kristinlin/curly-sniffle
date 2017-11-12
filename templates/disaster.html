@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>CURRENT EARTHQUAKES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0=" crossorigin="anonymous" />
+  </head>
+  <body>
+
+    <br><br>
+    
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+	<div class="large-12 cell">
+
+	  <h1>Here's 20 Earthquakes right now:</h1>
+	  <h5>of magnitudes 3 or higher</h5>
+	  <hr>
+
+	  <div class="alert callout">
+	    <table>
+	      <thead>
+		<tr>
+		  <th width="200">PLACE</th>
+		  <th width="150">MAGNITUDE</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		{% for e in list %}
+		<tr> <!-- new row for every earthquake -->
+		{% for i in e %}
+		<td>{{ e[i] }}</td> <!-- new column for each earthquake info -->
+		{% endfor %}
+		</tr>
+		{% endfor %}
+	      </tbody>
+	    </table>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+    <br><br><br>
+    
+  </body>
+</html>
